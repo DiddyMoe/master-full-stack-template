@@ -10,7 +10,10 @@ html{
 //text styling
 p, h1, h2, h3, h4, h5, h6, label {
   margin-bottom: 16px;
+}
 
+a{
+  text-decoration: none;
 }
 
 //core wrapper styling
@@ -46,6 +49,7 @@ p, h1, h2, h3, h4, h5, h6, label {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 
@@ -53,6 +57,7 @@ a {
   width: 100%;
   .flexInit();
   .flexStartColumn();
+  .pad(10px 0 10px 0);
 
   &.center{
     .flexCenterColumn();
@@ -60,7 +65,7 @@ a {
   min-height: 100vh;
 }
 
-//core content filler eleemnts
+//core content filler elements
 .content-block {
   width: 100%;
   .flexInit();
@@ -122,6 +127,7 @@ a {
 
 .content-wrapper {
   max-width: @mb2;
+  .pad(10px)
 }
 
 .splash {
@@ -150,16 +156,6 @@ a {
 
     .block:nth-child(3n+1) {
       background-color: @sidel;
-    }
-
-    .column:nth-child(2){
-      .block{
-        background-color: @mainl;
-      }
-
-      .block:nth-child(2){
-        background-color: @minorl;
-      }
     }
 
   }
